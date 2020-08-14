@@ -1,29 +1,53 @@
-﻿<Controls:MetroWindow xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
-	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
-	xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
-	xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro" 
-	xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
-	Title="Dialog validation"
-	Width="600"
-	Height="400"
-	ResizeMode="NoResize"
-	BorderBrush="RoyalBlue"
-	BorderThickness="1">
+﻿<mah:MetroWindow xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+                      xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
+                      xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro" 
+                      xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+                      Title="Dialog validation"
+                      Width="600"
+                      Height="400"
+                      ResizeMode="NoResize"
+                      BorderBrush="RoyalBlue"
+                      BorderThickness="1">
 
-	<Window.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
-				<ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
-				<ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Themes/Light.Cobalt.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Window.Resources>
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Themes/Light.Cobalt.xaml"/>
+                </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
 
-	<Grid>
-		<StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-			<Button Name="Cliquez" Height="23" Width="100" Content="click here"/>
-		</StackPanel>
-	</Grid>
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
 
-</Controls:MetroWindow>        
+            <StackPanel Orientation="Horizontal" Margin="20">
+                <iconPacks:PackIconBoxIcons Kind="LogosApple" />
+                <iconPacks:PackIconEntypo Kind="Adjust" />
+                <iconPacks:PackIconEvaIcons Kind="AlertTriangleOutline" />
+                <iconPacks:PackIconFeatherIcons Kind="AlertTriangle" />
+                <iconPacks:PackIconFontAwesome Kind="AddressBookRegular" />
+                <iconPacks:PackIconIonicons Kind="AnalyticsiOS" />
+                <iconPacks:PackIconJamIcons Kind="Anchor" />
+                <iconPacks:PackIconMaterial Kind="AccessPoint" />
+                <iconPacks:PackIconMaterialDesign Kind="AccessAlarm" />
+                <iconPacks:PackIconMaterialLight Kind="Alarm" />
+                <iconPacks:PackIconMicrons Kind="Audio" />
+                <iconPacks:PackIconModern Kind="Alert" />
+                <iconPacks:PackIconOcticons Kind="Archive" />
+                <iconPacks:PackIconPicolIcons Kind="Accept" />
+                <iconPacks:PackIconRPGAwesome Kind="AlienFire" />
+                <iconPacks:PackIconSimpleIcons Kind="AdobeCreativeCloud" />
+                <iconPacks:PackIconTypicons Kind="Anchor" />
+                <iconPacks:PackIconUnicons Kind="AccessibleIconAlt" />
+                <iconPacks:PackIconWeatherIcons Kind="DayCloudy" />
+                <iconPacks:PackIconZondicons Kind="Anchor" />
+            </StackPanel>
+        
+            <Button Name="Cliquez" Width="100" Content="Click here..."/>
+        </StackPanel>
+    </Grid>
+
+</mah:MetroWindow>
