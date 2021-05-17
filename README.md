@@ -1,4 +1,4 @@
-# MahApps Powershel Test
+# MahApps Powershell Test
 
 ```
 MahApps.Metro v2.2.0
